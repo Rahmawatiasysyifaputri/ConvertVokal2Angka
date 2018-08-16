@@ -25,7 +25,7 @@ public class ConvertVocal2Angka {
          
         return kalimat;
     }
-     private static String vocal2Angka(String kalimat) {
+    private static String vocal2Angka(String kalimat) {
         char [][] arConvert =
         {{'a','4'},{'1','1'},{'u','2'},{'e','3'},{'o','0'}};
          
@@ -35,8 +35,15 @@ public class ConvertVocal2Angka {
          
         return kalimat;
     }
-}
-        
+     private static void tampilPerKata(String kalimat, String convert) {
+        String[] arrKal = kalimat.split(" ");
+        String[] arrCon = convert.split(" ");
+         
+        for (int i=0;i<arrKal.length;i++) {
+            System.out.println(arrKal[i]+" => "+arrCon[i]);   
+    }
+    }
+}       
 
     
 
