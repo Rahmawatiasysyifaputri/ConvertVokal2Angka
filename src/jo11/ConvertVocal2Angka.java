@@ -35,14 +35,18 @@ public class ConvertVocal2Angka {
          
         return kalimat;
     }
-     private static void tampilPerKata(String kalimat, String convert) {
+    private static void tampilPerKata(String kalimat, String convert) {
         String[] arrKal = kalimat.split(" ");
         String[] arrCon = convert.split(" ");
          
         for (int i=0;i<arrKal.length;i++) {
-            System.out.println(arrKal[i]+" => "+arrCon[i]);   
+        System.out.println(arrKal[i]+" => "+arrCon[i]);   
     }
     }
+    private static void tampilHasil(String convert) {
+        System.out.println("Kalimat Alay Angka : " + convert);
+    } 
+  
 }       
 
     
