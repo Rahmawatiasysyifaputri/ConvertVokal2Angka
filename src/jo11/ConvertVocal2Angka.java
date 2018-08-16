@@ -46,7 +46,15 @@ public class ConvertVocal2Angka {
     private static void tampilHasil(String convert) {
         System.out.println("Kalimat Alay Angka : " + convert);
     } 
-  
+    public static void main(String[] args)
+    {
+        String identitas = "Rahmawati Asy syifa' Putri / X RPL 3 / 32";
+        tampilJudul(identitas);
+        String kalimat = tampilInput();
+        String convert = vocal2Angka(kalimat);
+        tampilPerKata(kalimat, convert);
+        tampilHasil(convert);
+    }
 }       
 
     
