@@ -40,6 +40,7 @@ public class CobaOperasiString {
                 + x.equals(r));
         System.out.println("isi x sama dengan r (Not Case Sensitive) : "
                 + x.equalsIgnoreCase(r));
+        
     }
  
 }
